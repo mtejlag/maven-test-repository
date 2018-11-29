@@ -15,6 +15,7 @@ node {
    stage('Compilar'){
       
       echo "Comienza la compilacion!!!!"
+      mvn compile
    }
    stage('Test'){
       
