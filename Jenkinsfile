@@ -12,8 +12,16 @@
 }*/
 
 node {
-   stage('Build'){
+   stage('Compilar'){
       
-      echo "Adios mundo!!!!"
+      echo "Comienza la compilacion!!!!"
    }
+   stage('Test'){
+      
+      echo "Comienzan las pruebas!!!!"
+   }
+   stage('Empaquetar'){
+      
+      echo "Comienza la empaquetacion!!!!"
+   }   
 }
