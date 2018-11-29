@@ -1,4 +1,4 @@
-pipeline {
+/*pipeline {
    agent any
    stages {
       stage('Etapa 1') {
@@ -9,9 +9,10 @@ pipeline {
          }
       }
    }
-}
+}*/
 
-/*node {
+node {
+   checkout scm
    stage('Compilar'){
       
       echo "Comienza la compilacion!!!!"
@@ -25,4 +26,4 @@ pipeline {
       
       echo "Comienza la empaquetacion!!!!"
    }   
-}*/
+}
