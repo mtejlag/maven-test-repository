@@ -53,25 +53,25 @@ pipeline {
             }
          }
       }
-      post{
-         
-         always{
-            
-            deleteDir()
-         }
-         failure{
-            echo "UPSSS!!"
-         }
-         success{
-            
-            echo "Exito"
-         }
-         changed{
-            
-            echo "cambio"
-         }
-      }      
    }
+   post{
+         
+      always{
+            
+         deleteDir()
+      }
+      failure{
+         echo "UPSSS!!"
+      }
+      success{
+            
+         echo "Exito"
+      }
+      changed{
+            
+         echo "cambio"
+      }
+   }         
 }
 
 /*node {
