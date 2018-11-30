@@ -77,7 +77,7 @@ pipeline {
       ){
          
          sh 'mvn test'
-         //junit '***.xml'
+         //junit '*\/**.xml'esto es necesario si no se usa pluging withMaven para ver los resultados de los test
       }
    }
    stage('Empaquetar'){
