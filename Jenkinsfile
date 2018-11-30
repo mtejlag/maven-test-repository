@@ -31,6 +31,7 @@ node {
       ){*/
          
          sh 'mvn test'
+         junit '**/*.xml'
       //}
    }
    stage('Empaquetar'){
