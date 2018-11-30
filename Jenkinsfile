@@ -98,7 +98,7 @@
     }
 }*/
 
-node {
+node (master){
    checkout scm
    stage('Compilar'){
       
