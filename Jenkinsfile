@@ -74,7 +74,7 @@
    }         
 }*/
 
-node {
+/*node {
     try {
         stage('Test') {
             sh 'echo "Exito!"; exit 0'
@@ -96,9 +96,9 @@ node {
 
         echo 'Se ejecuta siempre'
     }
-}
+}*/
 
-/*node {
+node {
    checkout scm
    stage('Compilar'){
       
@@ -127,13 +127,12 @@ node {
       withMaven(
          maven: 'maven por defecto (3.6.0)'
       ){
-      try{
+         try{
          
-         sh 'mvn package'
-      }finally{
-         //deleteDir()
+            sh 'mvn package'
+         }finally{
+            deleteDir()
+         }         
       }
-         
-      //}
    }   
-}*/
+}
