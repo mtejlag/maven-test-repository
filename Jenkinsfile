@@ -16,31 +16,31 @@ node {
    stage('Compilar'){
       
       echo "Comienza la compilacion!!!!"
-      withMaven(
+      /*withMaven(
          maven: 'maven por defecto (3.6.0)'
-      ){
+      ){*/
          
          sh 'mvn compile'
-      }
+      //}
    }
    stage('Test'){
       
       echo "Comienzan las pruebas!!!!"
-      withMaven(
+      /*withMaven(
          maven: 'maven por defecto (3.6.0)'
-      ){
+      ){*/
          
          sh 'mvn test'
-      }
+      //}
    }
    stage('Empaquetar'){
       
       echo "Comienza la empaquetacion!!!!"
-      withMaven(
+      /*withMaven(
          maven: 'maven por defecto (3.6.0)'
-      ){
+      ){*/
          
          sh 'mvn package'
-      }
+      //}
    }   
 }
