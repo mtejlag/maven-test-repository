@@ -44,7 +44,7 @@ pipeline {
       
          steps {
          
-            echo 'Comienza la empaquetacion!!!!
+            echo 'Comienza la empaquetacion!!!!'
             withMaven(
                maven: 'maven por defecto (3.6.0)'
             ){
