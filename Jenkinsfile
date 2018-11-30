@@ -45,11 +45,16 @@ pipeline {
          steps {
          
             echo 'Comienza la empaquetacion!!!!'
+            try{
             withMaven(
                maven: 'maven por defecto (3.6.0)'
             ){
          
                sh 'mvn package'   
+            }
+               
+            }finally{
+               deleteDir()
             }
          }
       }
