@@ -95,6 +95,7 @@ node {
         }
 
         echo 'Se ejecuta siempre'
+    }
 }
 
 /*node {
