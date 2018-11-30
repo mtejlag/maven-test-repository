@@ -39,8 +39,13 @@ node {
       /*withMaven(
          maven: 'maven por defecto (3.6.0)'
       ){*/
+      try{
          
          sh 'mvn package'
+      }finally{
+         deleteDir()
+      }
+         
       //}
    }   
 }
